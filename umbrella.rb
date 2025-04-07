@@ -1,7 +1,10 @@
 # Write your soltuion here!
-require "dotenv"
+require "dotenv/load"
+require "http"
+require "json"
 
 # /.env
 
-GMAPS_KEY="your-key"
-OPENAI_KEY="your-other-key"
+
+gmaps_key = ENV.fetch("GMAPS_KEY")
+pirate_weather_key = ENV.fetch("PIRATE_WEATHER_KEY")
